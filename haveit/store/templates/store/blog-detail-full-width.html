@@ -1,0 +1,164 @@
+
+
+
+    {% extends 'store/base.html' %}
+    {% load static %}
+    {% block content %}
+
+
+
+
+  
+
+    <!-- Blog section -->
+    <section class="gi-blog py-[40px] max-[767px]:py-[30px]">
+        <div class="flex flex-wrap justify-between items-center mx-auto min-[1600px]:max-w-[1600px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px] relative">
+            <div class="flex flex-wrap w-full">
+                <div class="gi-blogs-rightside w-full px-[12px]">
+                    <!-- Blog content Start -->
+                    <div class="gi-blogs-content">
+                        <div class="gi-blogs-inner">
+                            <div class="gi-single-blog-item">
+                                <div class="single-blog-info">
+                                    <figure class="blog-img mb-[16px]">
+                                        <a href="#"><img src="{% static "assets/img/blog/8.jpg" %}" alt="blog imag" class="w-full rounded-[5px]"></a>
+                                    </figure>
+                                    <div class="single-blog-detail">
+                                        <label class="mb-[15px] text-[#999] inline-block">June 30,2022 - <a href="#" class="text-[#999] hover:text-[#5caf90]">Organic</a></label>
+                                        <h3 class="text-[22px] font-semibold text-[#4b5966] leading-[1.2] mb-[6px] max-[767px]:text-[20px] max-[575px]:text-[19px]">Marketing Guide: 5 Steps to Success.</h3>
+                                        <p class="gi-text text-[#777] text-[14px] mb-[16px]">"Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book. It has survived not only five
+                                            centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. It was popularised in the 1960s with the release of
+                                            Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                            desktop publishing software like Aldus PageMaker including versions of Lorem
+                                            Ipsum.</p>
+                                        <p class="gi-text-highlight text-[#777] text-[14px] italic font-medium mb-[16px]">The standard chunk of Lorem Ipsum used since the
+                                            1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33
+                                            from "de Finibus Bonorum et Malorum" by Cicero.</p>
+                                        <p class="text-[#777] text-[14px] mb-[16px]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                            roots in a piece of passages of Lorem Ipsum classical Latin literature from
+                                            45 BC, making it over 2000 years old. Richard McClintock, a Latin professor
+                                            at Hampden-Sydney College in Virginia</p>
+                                        <div class="sub-img mt-[30px] mx-[-12px]">
+                                            <div class="flex flex-wrap">
+                                                <div class="min-[768px]:w-[50%] w-full px-[12px] mb-[24px]">
+                                                    <img src="{% static "assets/img/blog/3.jpg" %}" alt="blog" class="w-full rounded-[5px]">
+                                                </div>
+                                                <div class="min-[768px]:w-[50%] w-full px-[12px] mb-[24px]">
+                                                    <img src="{% static "assets/img/blog/4.jpg" %}" alt="blog" class="w-full rounded-[5px]">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="text-[#777] text-[14px] leading-[28px] mb-[16px]">It is a long established fact that a reader will be distracted by the
+                                            readable content of a page distracted by the readable when looking at its
+                                            layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                            distribution of letters, as opposed to using.</p>
+                                        <p class="text-[#777] text-[14px] leading-[28px] mb-[16px]">There are many variations of passages of Lorem Ipsum available, but the
+                                            majority have suffered distracted by the readable alteration in some form,
+                                            by injected humour.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination Start -->
+                        <div class="gi-pro-pagination pt-[15px] flex justify-between items-center border-t-[1px] border-solid border-[#eee] max-[575px]:flex-col">
+                            <span class="text-[14px] text-[#777] max-[575px]:mb-[10px]">Showing 1-6 of 20 items</span>
+                            <ul class="gi-pro-pagination-inner">
+                                <li class="inline-block float-left mr-[5px]">
+                                    <a class="w-[32px] h-[32px] p-[0] font-light text-[#777] leading-[32px] bg-[#eee] flex text-center align-top text-[16px] justify-center items-center rounded-[5px] hover:bg-[#5caf90] hover:text-[#fff] active" href="#">1</a>
+                                </li>
+                                <li class="inline-block float-left mr-[5px]">
+                                    <a class="w-[32px] h-[32px] p-[0] font-light text-[#777] leading-[32px] bg-[#eee] flex text-center align-top text-[16px] justify-center items-center rounded-[5px] hover:bg-[#5caf90] hover:text-[#fff]" href="#">2</a>
+                                </li>
+                                <li class="inline-block float-left mr-[5px]">
+                                    <a class="w-[32px] h-[32px] p-[0] font-light text-[#777] leading-[32px] bg-[#eee] flex text-center align-top text-[16px] justify-center items-center rounded-[5px] hover:bg-[#5caf90] hover:text-[#fff]" href="#">3</a>
+                                </li>
+                                <li class="inline-block float-left mr-[5px]">
+                                    <span class="w-[20px] text-[#777] block text-center">...</span>
+                                </li>
+                                <li class="inline-block float-left mr-[5px]">
+                                    <a class="w-[32px] h-[32px] p-[0] font-light text-[#777] leading-[32px] bg-[#eee] flex text-center align-top text-[16px] justify-center items-center rounded-[5px] hover:bg-[#5caf90] hover:text-[#fff]" href="#">8</a>
+                                </li>
+                                <li class="inline-block float-left">
+                                    <a class="next w-[32px] h-[32px] p-[0] font-light text-[#777] leading-[32px] bg-[#eee] flex text-center align-top text-[16px] justify-center items-center rounded-[5px] hover:bg-[#5caf90] hover:text-[#fff]" href="#">Next <i class="gicon gi-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Pagination End -->
+                        <!-- Comments Start -->
+                        <div class="gi-blog-comments mt-[80px] max-[575px]:mt-[60px]">
+                            <div class="gi-blog-cmt-preview">
+                                <div class="gi-blog-comment-wrapper">
+                                    <h4 class="gi-blog-dgi-title mb-[30px] py-[10px] px-[15px] text-[16px] font-semibold text-[#4b5966] bg-[#f8f8fb] rounded-[5px] leading-[1.2]">Comments : 05</h4>
+                                    <div class="gi-single-comment-wrapper mb-[30px] flex flex-row">
+                                        <div class="gi-blog-user-img w-[50px] mr-[15px]">
+                                            <img src="{% static "assets/img/user/1.jpg" %}" alt="blog image" class="w-full rounded-[5px]">
+                                        </div>
+                                        <div class="gi-blog-comment-content w-[calc(100%-115px)]">
+                                            <h5 class="text-[#4b5966] text-[16px] font-semibold mb-[6px] leading-[1.2]">John Deo</h5>
+                                            <span class="text-[#999] text-[13px]">October 14, 2018 </span>
+                                            <p class="py-[5px] text-[#777] text-[14px] leading-[28px] font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim
+                                                ad minim veniam. </p>
+                                            <div class="gi-blog-details-btn">
+                                                <a href="javascript:void(0)" class="text-[#5caf90] text-[13px]">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gi-single-comment-wrapper mb-[30px] flex flex-row ml-[65px] max-[420px]:ml-[30px]">
+                                        <div class="gi-blog-user-img w-[50px] mr-[15px]">
+                                            <img src="{% static "assets/img/user/2.jpg" %}" alt="blog image" class="w-full rounded-[5px]">
+                                        </div>
+                                        <div class="gi-blog-comment-content w-[calc(100%-115px)]">
+                                            <h5 class="text-[#4b5966] text-[16px] font-semibold mb-[6px] leading-[1.2]">Jenifer lowes</h5>
+                                            <span class="text-[#999] text-[13px]">October 14, 2018 </span>
+                                            <p class="py-[5px] text-[#777] text-[14px] leading-[28px] font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolor magna aliqua. labore et
+                                                dolor magna aliqua.</p>
+                                            <div class="gi-blog-details-btn">
+                                                <a href="javascript:void(0)" class="text-[#5caf90] text-[13px]">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gi-blog-cmt-form">
+                                <div class="gi-blog-reply-wrapper mt-50">
+                                    <h4 class="gi-blog-dgi-title mb-[30px] py-[10px] px-[15px] text-[16px] font-semibold text-[#4b5966] bg-[#f8f8fb] rounded-[5px] leading-[1.2]">Leave A Reply</h4>
+                                    <form class="gi-blog-form" action="#">
+                                        <div class="flex flex-wrap mx-[-12px]">
+                                            <div class="min-[768px]:w-[50%] w-full px-[12px]">
+                                                <div class="gi-leave-form">
+                                                    <input type="text" placeholder="Full Name" class="w-full h-[45px] mb-[30px] pl-[20px] border-[1px] border-solid border-[#eee] rounded-[5px] text-[#777] text-[14px] outline-[0]">
+                                                </div>
+                                            </div>
+                                            <div class="min-[768px]:w-[50%] w-full px-[12px]">
+                                                <div class="gi-leave-form">
+                                                    <input type="email" placeholder="Email Address" class="w-full h-[45px] mb-[30px] pl-[20px] border-[1px] border-solid border-[#eee] rounded-[5px] text-[#777] text-[14px] outline-[0]">
+                                                </div>
+                                            </div>
+                                            <div class="w-full px-[12px]">
+                                                <div class="gi-text-leave">
+                                                    <textarea placeholder="Message" class="w-full h-[200px] mb-[30px] py-[15px] px-[20px] border-[1px] border-solid border-[#eee] rounded-[5px] outline-[0]"></textarea>
+                                                    <a href="#" class="gi-btn-2 transition-all duration-[0.3s] ease-in-out overflow-hidden text-center relative rounded-[5px] py-[10px] px-[15px] bg-[#5caf90] text-[#fff] border-[0] text-[14px] tracking-[0] font-medium inline-flex items-center hover:bg-[#4b5966] hover:text-[#fff]">Submit</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Comments End -->
+                    </div>
+                    <!--Blog content End -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog section End -->
+
+
+    {% endblock content %}

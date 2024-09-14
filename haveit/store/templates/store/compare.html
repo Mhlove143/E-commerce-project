@@ -1,0 +1,321 @@
+
+
+{% extends 'store/base.html' %}
+
+{% load static %}
+{% block content %}
+
+
+
+
+    <!-- Compare section -->
+    <section class="gi-compare py-[40px] max-[767px]:py-[30px]">
+        <h2 class="hidden">Compare</h2>
+        <div class="flex flex-wrap justify-between items-center mx-auto min-[1600px]:max-w-[1600px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px] relative">
+            <div class="flex flex-wrap w-full overflow-hidden">
+                <div class="w-full px-[12px]">
+                    <div class="gi-compare-box flex flex-row overflow-auto">
+                        <div class="gi-compare-col title-col border-[1px] border-r-[1px] border-solid border-[#eee] relative block h-full w-[314px] min-w-[314px] max-[1399px]:w-[280px] max-[1399px]:min-w-[280px] mr-[-1px] max-[991px]:w-[150px] max-[991px]:min-w-[150px]">
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <div class="title w-full min-h-[221px] h-full flex items-center">
+                                    <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Product Image</h5>
+                                </div>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Name</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Category</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Ratings</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Availability</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">location</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Brand</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">SKU</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Quantity</h5>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Weight</h5>
+                            </div>
+                            <div class="gi-compare-cell px-[15px] py-[10px] flex items-center relative">
+                                <div class="desc flex items-center h-[115px]">
+                                    <h5 class="m-[0] leading-[28px] text-[15px] font-semibold">Description</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gi-compare-col mr-[-1px] w-[314px] min-w-[314px] h-full block border-[1px] border-solid border-[#eee] relative max-[1399px]:w-[280px] max-[1399px]:min-w-[280px] max-[991px]:w-[251px] max-[991px]:min-w-[251px]">
+                            <a href="javascript:void(0)" class="remove-compare-product absolute top-[15px] right-[15px] leading-[15px] z-[5]">
+                                <img src="{% static "assets/img/icons/close.svg" %}" class="svg_img transition-all duration-[0.3s] ease-in-out w-[15px] h-[15px] opacity-[0.5]" alt="close">
+                            </a>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <div class="list w-full min-h-[221px] h-full flex items-center justify-center">
+                                    <img src="{% static "assets/img/product-images/8_1.jpg" %}" alt="product" class="h-[200px] m-auto">
+                                    <div class="gi-action transition-all duration-[0.3s] ease-in-out absolute top-[50%] right-[0] left-[0] translate-y-[-50%] opacity-[0] max-[991px]:opacity-[1] max-[991px]:bottom-[3px] max-[991px]:top-auto max-[991px]:transform-none">
+                                        <ul class="flex flex-row items-center justify-center">
+                                            <li class="m-[2px]">
+                                                <a class="gi-btn-group wishlist transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]" title="Wishlist">
+                                                    <i class="fi-rr-heart text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                            <li class="m-[2px]">
+                                                <a href="javascript:void(0)" title="Add To Cart" class="gi-btn-group add-to-cart transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]">
+                                                    <i class="fi-rr-shopping-basket text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Smoked Honey Spiced Nuts</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Snack & Spices</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <span class="gi-pro-rating">
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star text-[14px] text-[#777] mr-[3px] float-left mr-[3px]"></i>
+                                </span>
+                                <p class="rating-info ml-[5px] text-[12px] text-[#999] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">(15 Review)</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#02d302] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">In Stock</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">In Store , Online</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Bhisma Organics</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">54786</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">1 Pack</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">1 Kg</p>
+                            </div>
+                            <div class="gi-compare-cell px-[15px] py-[10px] flex items-center relative">
+                                <div class="desc h-[115px] flex items-center">
+                                    <p class="h-[115px] max-h-[288px] flex whitespace-pre-wrap overflow-hidden text-ellipsis m-[0] text-[14px] text-[#777] font-light leading-[28px]">There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gi-compare-col mr-[-1px] w-[314px] min-w-[314px] h-full block border-[1px] border-solid border-[#eee] relative max-[1399px]:w-[280px] max-[1399px]:min-w-[280px] max-[991px]:w-[251px] max-[991px]:min-w-[251px]">
+                            <a href="javascript:void(0)" class="remove-compare-product absolute top-[15px] right-[15px] leading-[15px] z-[5]">
+                                <img src="{% static "assets/img/icons/close.svg" %}" class="svg_img transition-all duration-[0.3s] ease-in-out w-[15px] h-[15px] opacity-[0.5]" alt="close">
+                            </a>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <div class="list w-full min-h-[221px] h-full flex items-center justify-center">
+                                    <img src="{% static "assets/img/product-images/2_1.jpg" %}" alt="product" class="h-[200px] m-auto">
+                                    <div class="gi-action transition-all duration-[0.3s] ease-in-out absolute top-[50%] right-[0] left-[0] translate-y-[-50%] opacity-[0] max-[991px]:opacity-[1] max-[991px]:bottom-[3px] max-[991px]:top-auto max-[991px]:transform-none">
+                                        <ul class="flex flex-row items-center justify-center">
+                                            <li class="m-[2px]">
+                                                <a class="gi-btn-group wishlist transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]" title="Wishlist">
+                                                    <i class="fi-rr-heart text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                            <li class="m-[2px]">
+                                                <a href="javascript:void(0)" title="Add To Cart" class="gi-btn-group add-to-cart transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]">
+                                                    <i class="fi-rr-shopping-basket text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Dates Value Pouch</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Dried Fruits</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <span class="gi-pro-rating">
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                </span>
+                                <p class="rating-info ml-[5px] text-[12px] text-[#999] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">(654 Review)</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#ffa5a5] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Out Of Stock</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Online</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Darsh Mart</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">85725</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">1 Pack</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">5 Kg</p>
+                            </div>
+                            <div class="gi-compare-cell px-[15px] py-[10px] flex items-center relative">
+                                <div class="desc h-[115px] flex items-center">
+                                    <p class="h-[115px] max-h-[288px] flex whitespace-pre-wrap overflow-hidden text-ellipsis m-[0] text-[14px] text-[#777] font-light leading-[28px]">Recently with desktop publishing software like Aldus PageMaker including versions
+                                        of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gi-compare-col mr-[-1px] w-[314px] min-w-[314px] h-full block border-[1px] border-solid border-[#eee] relative max-[1399px]:w-[280px] max-[1399px]:min-w-[280px] max-[991px]:w-[251px] max-[991px]:min-w-[251px]">
+                            <a href="javascript:void(0)" class="remove-compare-product absolute top-[15px] right-[15px] leading-[15px] z-[5]">
+                                <img src="{% static "assets/img/icons/close.svg" %}" class="svg_img transition-all duration-[0.3s] ease-in-out w-[15px] h-[15px] opacity-[0.5]" alt="close">
+                            </a>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <div class="list w-full min-h-[221px] h-full flex items-center justify-center">
+                                    <img src="{% static "assets/img/product-images/4_1.jpg" %}" alt="product" class="h-[200px] m-auto">
+                                    <div class="gi-action transition-all duration-[0.3s] ease-in-out absolute top-[50%] right-[0] left-[0] translate-y-[-50%] opacity-[0] max-[991px]:opacity-[1] max-[991px]:bottom-[3px] max-[991px]:top-auto max-[991px]:transform-none">
+                                        <ul class="flex flex-row items-center justify-center">
+                                            <li class="m-[2px]">
+                                                <a class="gi-btn-group wishlist transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]" title="Wishlist">
+                                                    <i class="fi-rr-heart text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                            <li class="m-[2px]">
+                                                <a href="javascript:void(0)" title="Add To Cart" class="gi-btn-group add-to-cart transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]">
+                                                    <i class="fi-rr-shopping-basket text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Banana Chips Snack</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Fastfood</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <span class="gi-pro-rating">
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star text-[14px] text-[#777] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star text-[14px] text-[#777] mr-[3px] float-left mr-[3px]"></i>
+                                </span>
+                                <p class="rating-info ml-[5px] text-[12px] text-[#999] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">(264 Review)</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#02d302] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">In Stock</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">In Store</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Peoples Store</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">2546</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">2 Pack</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">500 Gram</p>
+                            </div>
+                            <div class="gi-compare-cell px-[15px] py-[10px] flex items-center relative">
+                                <div class="desc h-[115px] flex items-center">
+                                    <p class="h-[115px] max-h-[288px] flex whitespace-pre-wrap overflow-hidden text-ellipsis m-[0] text-[14px] text-[#777] font-light leading-[28px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gi-compare-col w-[324px] min-w-[324px] h-full border-[1px] border-solid border-[#eee] relative max-[1399px]:w-[279px] max-[1399px]:min-w-[279px] max-[991px]:w-[250px] max-[991px]:min-w-[250px]">
+                            <a href="javascript:void(0)" class="remove-compare-product absolute top-[15px] right-[15px] leading-[15px] z-[5]">
+                                <img src="{% static "assets/img/icons/close.svg" %}" class="svg_img transition-all duration-[0.3s] ease-in-out w-[15px] h-[15px] opacity-[0.5]" alt="close">
+                            </a>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <div class="list w-full min-h-[221px] h-full flex items-center justify-center">
+                                    <img src="{% static "assets/img/product-images/10_1.jpg" %}" alt="product" class="h-[200px] m-auto">
+                                    <div class="gi-action transition-all duration-[0.3s] ease-in-out absolute top-[50%] right-[0] left-[0] translate-y-[-50%] opacity-[0] max-[991px]:opacity-[1] max-[991px]:bottom-[3px] max-[991px]:top-auto max-[991px]:transform-none">
+                                        <ul class="flex flex-row items-center justify-center">
+                                            <li class="m-[2px]">
+                                                <a class="gi-btn-group wishlist transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]" title="Wishlist">
+                                                    <i class="fi-rr-heart text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                            <li class="m-[2px]">
+                                                <a href="javascript:void(0)" title="Add To Cart" class="gi-btn-group add-to-cart transition-all duration-[0.3s] ease-in-out w-[40px] h-[40px] flex items-center justify-center rounded-[5px] bg-[#4b5966] hover:bg-[#5caf90]">
+                                                    <i class="fi-rr-shopping-basket text-[18px] text-[#fff] leading-[0]"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Healthy Nutmix, 200g Pack</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Fastfood</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <span class="gi-pro-rating">
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star fill text-[14px] text-[#f27d0c] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star text-[14px] text-[#777] mr-[3px] float-left mr-[3px]"></i>
+                                    <i class="gicon gi-star text-[14px] text-[#777] mr-[3px] float-left mr-[3px]"></i>
+                                </span>
+                                <p class="rating-info ml-[5px] text-[12px] text-[#999] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">(325 Review)</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#02d302] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">In Stock</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">In Store</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">Mariyas Store</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">6542</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">1 Pack</p>
+                            </div>
+                            <div class="gi-compare-cell border-b-[1px] border-solid border-[#eee] px-[15px] py-[10px] flex items-center relative">
+                                <p class="m-[0] text-[14px] text-[#777] font-light leading-[28px] overflow-hidden text-ellipsis whitespace-nowrap tracking-[0.02rem]">1 Kg</p>
+                            </div>
+                            <div class="gi-compare-cell px-[15px] py-[10px] flex items-center relative">
+                                <div class="desc h-[115px] flex items-center">
+                                    <p class="h-[115px] max-h-[288px] flex whitespace-pre-wrap overflow-hidden text-ellipsis m-[0] text-[14px] text-[#777] font-light leading-[28px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Compare section End -->
+
+
+    {% endblock content %}
